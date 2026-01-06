@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YouTube Downloader by NexusPlay</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <h1>YT Load</h1>
+      </div>
+      <p class="tagline">by NexusPlay</p>
+    </header>
+
+    <main class="main-content">
+      <div class="search-section">
+        <div class="input-group">
+          <i class="fas fa-link"></i>
+          <input id="videoUrl" type="text" placeholder="Paste YouTube URL here..." autocomplete="off" />
+          <button id="searchBtn" class="btn-primary">
+            <i class="fas fa-search"></i><span>Search</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="loadingSpinner" class="loading-spinner hidden">
+        <div class="spinner"></div>
+        <p>Fetching video information...</p>
+      </div>
+
+      <div id="videoInfo" class="video-info hidden">
+        <div class="video-preview">
+          <img id="thumbnail" src="" alt="Video Thumbnail">
+          <div class="video-details">
+            <h2 id="videoTitle"></h2>
+            <div class="meta-info">
+              <span class="meta-item"><i class="fas fa-user"></i> <span id="videoAuthor"></span></span>
+              <span class="meta-item"><i class="fas fa-clock"></i> <span id="videoDuration"></span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-section">
+          <h3>Select Quality & Download</h3>
+          <div id="qualityOptions" class="quality-options"></div>
+        </div>
+      </div>
+
+      <div id="errorMessage" class="error-message hidden">
+        <i class="fas fa-exclamation-circle"></i>
+        <p id="errorText"></p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 NexusPlay. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

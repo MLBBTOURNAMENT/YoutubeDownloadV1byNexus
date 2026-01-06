@@ -1,0 +1,27 @@
+{
+  "name": "youtube-downloader-ytdlp",
+  "version": "1.0.0",
+  "description": "Professional YouTube Video Downloader with yt-dlp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "video",
+    "yt-dlp"
+  ],
+  "author": "Jason Darius Chandra",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "execa": "^9.6.1",
+    "express": "^4.18.2",
+    "youtube-dl-exec": "^3.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
